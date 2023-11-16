@@ -1,3 +1,8 @@
 {
-  "image": "kristina90/settings:latest"
+  "image": "kristina90/settings:script",
+  "onCreateCommand": "whoami >> /tmp/test1 && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea",
+  "postAttachCommand": "whoami >> /tmp/test2 && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea",
+  "postCreateCommand": "whoami >> /tmp/test3 && mkdir -p /tmp/temp/WTF && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea",
+
+  "postStartCommand": "whoami >> /tmp/test4 && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea"
 }
