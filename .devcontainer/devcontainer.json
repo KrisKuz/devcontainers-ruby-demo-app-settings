@@ -1,12 +1,4 @@
 {
   "image": "kristina90/settings:script",
-//  "onCreateCommand": "whoami >> /tmp/test1 && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea",
-//  "postAttachCommand": "whoami >> /tmp/test2 && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea",
-//  "postCreateCommand": "whoami >> /tmp/test3 && mkdir -p /tmp/temp/WTF && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea",
-
-  //WONT BE EXECUTED: "postStartCommand": "whoami >> /tmp/test4 && mkdir -p /IdeaProjects/temp && cp -r /tmp/.idea /IdeaProjects/temp/.idea",
-
-  "onCreateCommand": "cp -r /tmp/.idea /IdeaProjects/devcontainers-ruby-demo-app-settings/.idea && echo \"completed\" >> /IdeaProjects/devcontainers-ruby-demo-app-settings/test1",
-  "postAttachCommand": "whoami >> /IdeaProjects/devcontainers-ruby-demo-app-settings/test2",
-  "postCreateCommand": "whoami >> /IdeaProjects/devcontainers-ruby-demo-app-settings/test3",
+  "onCreateCommand": "cp -r /tmp/.idea /IdeaProjects/devcontainers-ruby-demo-app-settings/.idea",
 }
