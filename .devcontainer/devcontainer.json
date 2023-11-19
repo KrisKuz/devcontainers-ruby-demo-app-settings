@@ -1,4 +1,4 @@
 {
-  "image": "kristina90/settings:script",
+  "image": "kristina90/settings:latest",
   "onCreateCommand": "cp -r /tmp/.idea /IdeaProjects/devcontainers-ruby-demo-app-settings/.idea",
 }
